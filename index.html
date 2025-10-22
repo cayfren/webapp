@@ -317,6 +317,7 @@ messageInput.addEventListener('keydown', (e) => {
 
       try {
         const form = new FormData();
+        form.append('chatId', chatId);
         form.append('message', text);
         if (fileToSend) form.append('file', fileToSend, fileToSend.name);
 
@@ -542,5 +543,6 @@ messageInput.addEventListener('keydown', (e) => {
   </script>
 </body>
 </html>
+
 
 
