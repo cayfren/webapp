@@ -201,6 +201,8 @@
   </div>
 
   <script>
+    // Generate chat ID once per session
+  const chatId = 'chat-' + Math.floor(Math.random() * 1000000);
     /***************************************
      * CONFIG: set your webhook URL here
      * It will POST FormData { message, file }
@@ -540,4 +542,5 @@ messageInput.addEventListener('keydown', (e) => {
   </script>
 </body>
 </html>
+
 
